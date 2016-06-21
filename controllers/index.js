@@ -11,15 +11,12 @@ module.exports = function (router) {
     router.get('/', function (req, res) {
 
     	request('http://127.0.0.1:3000/api/products', function(error, response, body) {
+    		var list = JSON.parse(body);
+
     	    res.render('index', {
-    	        products: JSON.parse(body)
+    	        products: list.data
     	    });
     	});
-
-
-
-
-
 
     });
 

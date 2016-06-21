@@ -2,8 +2,10 @@
 
 {<body}
 
-     <ul class="product-list">
+
+	<div class="backdrops"></div>
+    <div class="product-list">
     	{>productCard products=products/}
-    </ul>
+    </div>
 
 {/body}

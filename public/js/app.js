@@ -2,14 +2,32 @@
 
 	var Porter = {
 		init: function () {
-			$('.product-grid').isotope({
-				itemSelector: '.product-wrapper'
-			});
+			setTimeout(function() {
+				var $grid = $('.grid').isotope({
+					itemSelector: '.grid-item',
+					masonry: {
+					  columnWidth: '.grid-sizer'
+					}
+				});
 
-			console.log("wakka");
+				$('.backdrops').fadeOut('slow');
+
+			}, 1500);
+
+
+		},
+		renderHeader: function () {
+			dust.render('header', {}, function () {
+
+			});
 		}
 	};
 
-$(function	() {
+
+$(document).ready(function () {
+
 	Porter.init();
+
+
+
 });

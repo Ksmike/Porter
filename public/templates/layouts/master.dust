@@ -12,6 +12,9 @@
         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
         <script src="/js/app.js"></script>
+
+        <header>{>header /}</header>
+
         <div id="wrapper">
             {+body /}
         </div>

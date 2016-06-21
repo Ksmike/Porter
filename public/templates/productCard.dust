@@ -1,12 +1,15 @@
 
-<div class="product-grid">
-	{#products.data}
-		<div class="product-wrapper">
-			<img src="{image.outfit}">
-			<div class="product-name">{name}</div>
-			<div class="product-value">{price}</div>
-		</div>
+<div class="grid">
+  <!-- .grid-sizer empty element, only used for element sizing -->
+	<div class="grid-sizer"></div>
+	{#products}
 
-	{/products.data}
+		<div class="grid-item">
+			<img class="grid-image" src="{image.outfit}">
+			<div>{name}</div>
+			<div>{price}</div>
+		</div>
+	{/products}
+
 
 </div>
