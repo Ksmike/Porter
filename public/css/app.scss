@@ -1,0 +1,38 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*overflow-x: hidden !important;*/
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    color: #313435;
+    font-size: 10px;
+    line-height: 10px;
+    overflow-x: hidden;
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+}
+
+.product-list {
+	padding: 0;
+	.product-wrapper {
+		box-shadow: 2px 2px 2px 2px ghostwhite;
+		float: left;
+		.product-name {
+			font-size: 12px
+			width: 120px;
+		}
+
+		.product-value {
+			font-size: 12px;
+		}
+
+		img {
+			max-width: 102px;
+		}
+	}
+
+
+}

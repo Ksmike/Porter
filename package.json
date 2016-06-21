@@ -16,7 +16,9 @@
     "construx-sass": "^1.0.0",
     "express": "^4.12.2",
     "kraken-js": "^1.0.3",
-    "makara": "^2.0.3"
+    "makara": "^2.0.3",
+    "request": "^2.46.0",
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
