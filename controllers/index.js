@@ -24,9 +24,7 @@ module.exports = function (router) {
     });
 
     router.get('/product/:itemID', function (req, res, next) {
-    	console.log('req.params: ', req.params);
     	request('http://127.0.0.1:3000/api/product/' + req.params.itemID, function(error, response, body) {
-    		console.log('body: ', body);
     		if (error) {
     			console.log('error: ', error);
     		} else {
