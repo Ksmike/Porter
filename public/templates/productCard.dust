@@ -7,6 +7,7 @@
 		<a href="/product/{id}"><div class="grid-item"  data-id="{id}" data-cost="{price}">
 			<div class="grid-contain">
 				<img class="grid-image" src="{image.outfit}" data-cost="{price}">
+				<strong><div>{designer}</div></strong>
 				<div>{name}</div>
 				<div>{price}</div>
 			</div>
