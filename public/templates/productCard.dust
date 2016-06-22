@@ -9,7 +9,7 @@
 				<img class="grid-image" src="{image.outfit}" data-cost="{price}">
 				<strong><div>{designer}</div></strong>
 				<div>{name}</div>
-				<div>{price}</div>
+				<div class="price">{price}</div>
 			</div>
 
 		</div></a>
