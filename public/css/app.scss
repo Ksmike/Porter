@@ -4,7 +4,6 @@ $break-large: 1200px;
 
 html, body {
     margin: 0px;
-    /*overflow-x: hidden !important;*/
     position: relative;
     -webkit-overflow-scrolling: touch;
     padding: 0px;
@@ -41,8 +40,10 @@ body {
 
 .header-container {
 	h4 {
+    	font-family: fantasy;
 		text-align: center;
 		font-size: 25px;
+		color: black;
 	}
 }
 
@@ -88,14 +89,16 @@ body {
 .grid {
 
 	@media screen and (max-width: $break-small) {
-		left: 7%;
+	    left: 2%;
 
     }
+
 }
 
 .grid-item {
 	width: 99px;
 	display: table;
+	padding: 8px;
 }
 
 .grid-image {
