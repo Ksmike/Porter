@@ -1,28 +1,18 @@
 'use strict';
 
-	var Porter = {
-		init: function () {
-			setTimeout(function() {
-				var $grid = $('.grid').isotope({
-					itemSelector: '.grid-item'
-				});
 
-				$('.backdrops').fadeOut('slow');
-
-			}, 2350);
-
-
-		},
-		renderHeader: function () {
-			dust.render('header', {}, function () {});
-		}
-	};
 
 
 $(document).ready(function () {
 
-	Porter.init();
+	$(window).on("load", function() {
+		var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item'
+		});
 
+		$('.backdrops').fadeOut('slow');
+
+	});
 
 
 });
