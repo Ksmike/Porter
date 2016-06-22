@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-header {
+.header-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -34,9 +34,27 @@ header {
 	height: 100%;
 	z-index: 10;
 	display: block;
-	background-color: floralwhite;
+	background-color: white;
 	left: 0;
 	top: 0;
+}
+
+.header-container {
+	h4 {
+		text-align: center;
+		font-size: 25px;
+	}
+}
+
+.loader-gif {
+    position: relative;
+    top: 5%;
+    left: 36%;
+
+     @media screen and (max-width: $break-small) {
+    	left: 1%;
+
+    }
 }
 
 
@@ -68,7 +86,6 @@ header {
 }
 
 .grid {
-	left: 3%;
 
 	@media screen and (max-width: $break-small) {
 		left: 7%;
@@ -77,9 +94,8 @@ header {
 }
 
 .grid-item {
+	width: 99px;
 	display: table;
-	width: 150px;
-	margin-bottom: 5px;;
 }
 
 .grid-image {

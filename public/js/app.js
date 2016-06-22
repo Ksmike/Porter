@@ -4,15 +4,12 @@
 		init: function () {
 			setTimeout(function() {
 				var $grid = $('.grid').isotope({
-					itemSelector: '.grid-item',
-					masonry: {
-					  columnWidth: '.grid-sizer'
-					}
+					itemSelector: '.grid-item'
 				});
 
 				$('.backdrops').fadeOut('slow');
 
-			}, 1500);
+			}, 2750);
 
 
 		},
