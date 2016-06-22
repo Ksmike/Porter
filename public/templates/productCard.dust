@@ -5,9 +5,12 @@
 	{#products}
 
 		<div class="grid-item">
-			<img class="grid-image" src="{image.outfit}">
-			<div>{name}</div>
-			<div>{price}</div>
+			<div class="grid-contain">
+				<img class="grid-image" src="{image.outfit}">
+				<div>{name}</div>
+				<div>{price}</div>
+			</div>
+
 		</div>
 	{/products}
 
