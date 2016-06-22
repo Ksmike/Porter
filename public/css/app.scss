@@ -52,6 +52,7 @@ body {
 		text-align: center;
 		font-size: 25px;
 		color: black;
+
 	}
 }
 
@@ -107,6 +108,10 @@ body {
 	width: 99px;
 	display: table;
 	padding: 8px;
+
+	&:hover {
+    	transform: scale(1.1);
+	}
 }
 
 .grid-image {

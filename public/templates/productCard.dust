@@ -4,14 +4,14 @@
 	<div class="grid-sizer"></div>
 	{#products.data}
 
-		<div class="grid-item">
+		<a href="/api/product/{id}"><div class="grid-item"  data-id="{id}" data-cost="{price}">
 			<div class="grid-contain">
 				<img class="grid-image" src="{image.outfit}" data-cost="{price}">
 				<div>{name}</div>
 				<div>{price}</div>
 			</div>
 
-		</div>
+		</div></a>
 	{/products.data}
 
 

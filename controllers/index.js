@@ -18,4 +18,14 @@ module.exports = function (router) {
 
     });
 
+    router.get('/api/product/:itemID', function (req, res, next) {
+    	var productID='http://127.0.0.1:3000/api/products/' + req.params.id;
+    	request(productID, function(error, response, body) {
+    	    res.render('index', {
+    	        products: JSON.parse(body)
+    	    });
+    	});
+
+    });
+
 };

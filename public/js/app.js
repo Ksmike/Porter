@@ -9,14 +9,12 @@
 
 				$('.backdrops').fadeOut('slow');
 
-			}, 2750);
+			}, 2350);
 
 
 		},
 		renderHeader: function () {
-			dust.render('header', {}, function () {
-
-			});
+			dust.render('header', {}, function () {});
 		}
 	};
 
