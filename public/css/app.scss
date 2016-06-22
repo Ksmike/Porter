@@ -109,6 +109,11 @@ a {
 	margin-right: 250px;
 	padding: 10px;
 
+	@media screen and (max-width: $break-small) {
+    	margin-left: 0px;
+		margin-right: 0px;
+    }
+
 }
 
 .loader-gif {
