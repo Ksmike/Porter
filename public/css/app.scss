@@ -13,8 +13,9 @@ body {
     color: #313435;
     font-size: 10px;
     line-height: 10px;
-    font-family: 'Lato', Verdana, Arial, sans-serif;
+    font-family: GillSans,"Gill Sans MT",Calibri,sans-serif;
     overflow-x: hidden;
+    font-weight: lighter;
 
 }
 
@@ -92,9 +93,22 @@ a {
 }
 
 .single-container {
+
 	h1 {
 		text-align: center;
+		font-family: GillSans,"Gill Sans MT",Calibri,sans-serif;
+		font-weight: lighter;
+		line-height: 20px;
 	}
+}
+
+.single-card {
+	width: auto;
+	background-color: white;
+	margin-left: 250px;
+	margin-right: 250px;
+	padding: 10px;
+
 }
 
 .loader-gif {
