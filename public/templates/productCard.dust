@@ -2,17 +2,17 @@
 <div class="grid">
   <!-- .grid-sizer empty element, only used for element sizing -->
 	<div class="grid-sizer"></div>
-	{#products}
+	{#products.data}
 
 		<div class="grid-item">
 			<div class="grid-contain">
-				<img class="grid-image" src="{image.outfit}">
+				<img class="grid-image" src="{image.outfit}" data-cost="{price}">
 				<div>{name}</div>
 				<div>{price}</div>
 			</div>
 
 		</div>
-	{/products}
+	{/products.data}
 
 
 </div>
