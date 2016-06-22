@@ -11,19 +11,30 @@ module.exports = function (router) {
     router.get('/', function (req, res) {
 
     	request('http://127.0.0.1:3000/api/products', function(error, response, body) {
-    	    res.render('index', {
-    	        products: JSON.parse(body)
-    	    });
+    		if (error) {
+    			console.log('error: ', error);
+    		} else {
+    			res.render('index', {
+    			    products: JSON.parse(body)
+    			});
+    		}
+
     	});
 
     });
 
-    router.get('/api/product/:itemID', function (req, res, next) {
-    	var productID='http://127.0.0.1:3000/api/products/' + req.params.id;
-    	request(productID, function(error, response, body) {
-    	    res.render('index', {
-    	        products: JSON.parse(body)
-    	    });
+    router.get('/product/:itemID', function (req, res, next) {
+    	console.log('req.params: ', req.params);
+    	request('http://127.0.0.1:3000/api/product/' + req.params.itemID, function(error, response, body) {
+    		console.log('body: ', body);
+    		if (error) {
+    			console.log('error: ', error);
+    		} else {
+    			res.render('product', {
+    			    product: JSON.parse(body)
+    			});
+    		}
+
     	});
 
     });

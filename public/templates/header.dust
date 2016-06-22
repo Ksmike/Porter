@@ -1,5 +1,6 @@
 <div class="header-wrapper">
 	<div class="header-container">
-		<h4>Porter</h4>
+		<div class="home-button"><a href="/">Home</a></div>
+		<div><h4>Porter</h4></div>
 	</div>
 </div>

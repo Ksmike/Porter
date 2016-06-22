@@ -1,0 +1,12 @@
+
+{>"layouts/master" /}
+
+{<body}
+	<div class="single-container">
+    	<h1>{product.name}</h1>
+		<img class="single-image" src="{product.images.outfit}">
+		<h1>{product.designer}</h1>
+		<h1>{product.cost}</h1>
+
+	</div>
+{/body}
