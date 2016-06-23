@@ -11,6 +11,7 @@ module.exports = function (router) {
     router.get('/', function (req, res) {
 
     	request('http://127.0.0.1:3000/api/products', function(error, response, body) {
+
     		if (error) {
     			console.log('error: ', error);
     		} else {
