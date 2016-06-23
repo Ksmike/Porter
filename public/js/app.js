@@ -36,9 +36,7 @@ var Porter = class Porter {
 				}
 			})
 			.done(function (data) {
-				console.log('data: ', data);
 				var productsObj = data.data;
-				console.log('productsObj: ', productsObj);
 
 				this.renderTemplate(productsObj);
 
@@ -47,9 +45,11 @@ var Porter = class Porter {
 	}
 	renderTemplate(productArray) {
 		var $items;
+
 		for (var i = 0; i < productArray.length; i++) {
 			$items = this.generateTemplate(productArray[i]);
 			$('.grid').append($items).isotope('appended', $items);
+
 		}
 	}
 	generateTemplate(data) {
@@ -70,7 +70,7 @@ var Porter = class Porter {
 			gridContainer.classList.add('grid-contain');
 
 			gridImage.classList.add('grid-image');
-			gridImage.src = data.image.outfit;
+			gridImage.src = data.image.outfit || '//cache.net-a-porter.com/images/products/469119/469119_ou_sl.jpg';
 
 			gridDesigner.classList.add('designer');
 			gridDesigner.innerHTML = data.designer;

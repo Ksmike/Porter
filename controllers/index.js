@@ -13,7 +13,6 @@ module.exports = function (router) {
     	request('http://127.0.0.1:3000/api/products', function(error, response, body) {
             var productsObj = JSON.parse(body);
             var firstHalf = productsObj.data.splice(0,100);
-            console.log('firstHalf: ', firstHalf);
     		if (error) {
     			console.log('error: ', error);
     		} else {
