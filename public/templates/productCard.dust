@@ -9,7 +9,7 @@
 				<img class="grid-image" src="{image.outfit}">
 				<div class="designer">{designer}</div>
 				<div class="product-name">{name}</div>
-				<div class="price">{price}</div>
+				<div class="price">Buy now for - {price}</div>
 			</div>
 
 		</div></a>

@@ -74,7 +74,7 @@ var Porter = class Porter {
 			gridName.innerHTML = data.name;
 
 			gridPrice.classList.add('price');
-			gridPrice.innerHTML = data.price;
+			gridPrice.innerHTML = 'Buy now for - ' + data.price;
 
 			gridLink.appendChild(gridItem);
 			gridItem.appendChild(gridContainer);
