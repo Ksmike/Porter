@@ -70,7 +70,7 @@ var Porter = class Porter {
 			gridContainer.classList.add('grid-contain');
 
 			gridImage.classList.add('grid-image');
-			gridImage.src = data.image.outfit || '//cache.net-a-porter.com/images/products/469119/469119_ou_sl.jpg';
+			gridImage.src = data.image.outfit;
 
 			gridDesigner.classList.add('designer');
 			gridDesigner.innerHTML = data.designer;
