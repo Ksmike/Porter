@@ -67,7 +67,7 @@ a {
 	width: 100%;
 	height: 55px;
 	background-color: floralwhite;
-	box-shadow: 1px 1px 1px -1px blueviolet;
+	box-shadow: 1px 1px 1px -1px #56089E;
 }
 
 .backdrops {
@@ -110,7 +110,7 @@ a {
 }
 
 .price {
-	color: #d10000;
+	color: blueviolet;
 }
 
 
@@ -186,6 +186,11 @@ a {
     	transform: scale(1.75);
     	transition: all 0.5s ease;
     	z-index: 5;
+
+    	@media screen and (max-width: $break-small) {
+    		transform: scale(1.45);
+
+    	}
 	}
 }
 

@@ -21,24 +21,29 @@ var Porter = class Porter {
 
 	}
 	getMoreProducts() {
-		var offset = $('.grid-item').length;
+		var offset = $('.grid-item').length,
+			total = 500;
 
-		$.ajax({
-			url: 'http://127.0.0.1:3000/api/products',
-			type: 'GET',
-			dataType: 'json',
-			data: {
-				offset: offset,
-				limit: 50
-			}
-		})
-		.done(function (data) {
-			var productsObj = data.data;
-			console.log('productsObj: ', productsObj);
+		if (offset < 500) {
+			$.ajax({
+				url: 'http://127.0.0.1:3000/api/products',
+				type: 'GET',
+				dataType: 'json',
+				data: {
+					offset: offset,
+					limit: 50,
+					total: total
+				}
+			})
+			.done(function (data) {
+				console.log('data: ', data);
+				var productsObj = data.data;
+				console.log('productsObj: ', productsObj);
 
-			this.renderTemplate(productsObj);
+				this.renderTemplate(productsObj);
 
-		}.bind(this));
+			}.bind(this));
+		}
 	}
 	renderTemplate(productArray) {
 		var $items;
