@@ -40,12 +40,17 @@ a {
 	}
 }
 
+.designer {
+	font-style: bold;
+}
 
 .grid-contain {
 	border-radius: 2%;
 	padding: 5px;
 	width: 100%;
 	background: white;
+	max-height: 200px;
+	min-height: 160px;
 }
 
 .header-wrapper {
@@ -176,8 +181,10 @@ a {
 
 .grid-image {
 	height: auto;
+	max-height: 200px;
+	min-height: 100px;
 	width: 100%;
-	position: relative;;
+	position: relative;
 
     @media screen and (max-width: $break-small) {
     	max-width: 96px;
